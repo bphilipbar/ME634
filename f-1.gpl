@@ -1,0 +1,16 @@
+#### run with `gnuplot f.gpl`
+
+set xlabel 'eta'
+
+####do the following to create a PNG
+set terminal png
+
+set ylabel 'f'
+set output "f1.png"
+plot "f.dat" using 1:2 with lines title ''
+set ylabel "f '"
+set output "f2.png"
+plot "f.dat" using 1:3 with lines title ''
+set ylabel "f ''"
+set output "f3.png"
+plot "f.dat" using 1:4 with lines title ''
